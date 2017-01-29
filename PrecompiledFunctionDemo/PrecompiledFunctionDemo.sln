@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreCompiledFunctionDemo", "PrecompiledFunctionDemo\PreCompiledFunctionDemo.csproj", "{76D251C7-4BC4-4B57-A01A-2C47F4F29407}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreCompiledFunctionDemo.Tests", "PreCompiledFunctionDemo.Tests\PreCompiledFunctionDemo.Tests.csproj", "{D6C3939F-DC65-44DA-AAA4-E59A6619E91C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76D251C7-4BC4-4B57-A01A-2C47F4F29407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D251C7-4BC4-4B57-A01A-2C47F4F29407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D251C7-4BC4-4B57-A01A-2C47F4F29407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D251C7-4BC4-4B57-A01A-2C47F4F29407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C3939F-DC65-44DA-AAA4-E59A6619E91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C3939F-DC65-44DA-AAA4-E59A6619E91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C3939F-DC65-44DA-AAA4-E59A6619E91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C3939F-DC65-44DA-AAA4-E59A6619E91C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
