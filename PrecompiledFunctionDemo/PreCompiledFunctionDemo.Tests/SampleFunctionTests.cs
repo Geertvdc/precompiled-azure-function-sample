@@ -23,7 +23,7 @@ namespace PreCompiledFunctionSample.Tests
             req.Properties.Add(HttpPropertyKeys.HttpConfigurationKey, new HttpConfiguration());
 
             //Act
-            var response = SampleFunction.Run(req).Result;
+            var response = NameFunction.Run(req).Result;
 
             //Assert
             Assert.Equal("\"Hello " +name +"\"", response.Content.ReadAsStringAsync().Result);
@@ -37,7 +37,7 @@ namespace PreCompiledFunctionSample.Tests
             req.Properties.Add(HttpPropertyKeys.HttpConfigurationKey, new HttpConfiguration());
 
             //Act
-            var response = SampleFunction.Run(req).Result;
+            var response = NameFunction.Run(req).Result;
 
             //Assert
             Assert.Equal("\"Please pass a name on the query string or in the request body\"", response.Content.ReadAsStringAsync().Result);
@@ -57,7 +57,7 @@ namespace PreCompiledFunctionSample.Tests
             
 
             //Act
-            var response = SampleFunction.Run(req).Result;
+            var response = NameFunction.Run(req).Result;
 
             //Assert
             Assert.Equal("\"Hello " + name + "\"", response.Content.ReadAsStringAsync().Result);

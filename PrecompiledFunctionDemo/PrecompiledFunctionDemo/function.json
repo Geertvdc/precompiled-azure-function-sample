@@ -1,6 +1,6 @@
 ﻿{
   "scriptFile": "PreCompiledFunctionDemo.dll",
-  "entryPoint": "PreCompiledFunctionDemo.SampleFunction.Run",
+  "entryPoint": "PreCompiledFunctionDemo.NameFunction.Run",
   "bindings": [
     {
       "authLevel": "function",

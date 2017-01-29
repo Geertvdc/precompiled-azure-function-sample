@@ -5,7 +5,7 @@ using System.Net.Http;
 
 namespace PreCompiledFunctionDemo
 {
-    public class MyFunction
+    public class NameFunction
     {
         public static async Task<HttpResponseMessage> Run(HttpRequestMessage req)
         {
@@ -15,14 +15,17 @@ namespace PreCompiledFunctionDemo
                 .Value;
 
             // Get request body
-            dynamic data = await req.Content.ReadAsAsync<object>();
-
-            // Set name to query string or body data
-            name = name ?? data?.name;
+            if (req.Content != null)
+            {
+                dynamic data = await req.Content.ReadAsAsync<object>();
+                // Set name to query string or body data
+                name = name ?? data?.name;
+            }
 
             return name == null
                 ? req.CreateResponse(HttpStatusCode.BadRequest, "Please pass a name on the query string or in the request body")
                 : req.CreateResponse(HttpStatusCode.OK, "Hello " + name);
         }
+       
     }
 }
