@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreCompiledFunctionDemo", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreCompiledFunctionDemo.Tests", "PreCompiledFunctionDemo.Tests\PreCompiledFunctionDemo.Tests.csproj", "{D6C3939F-DC65-44DA-AAA4-E59A6619E91C}"
 EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "FunctionArmTemplate", "FunctionArmTemplate\FunctionArmTemplate.deployproj", "{8C9DEE4F-A72C-4354-8FB4-03D5610BA253}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D6C3939F-DC65-44DA-AAA4-E59A6619E91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6C3939F-DC65-44DA-AAA4-E59A6619E91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6C3939F-DC65-44DA-AAA4-E59A6619E91C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9DEE4F-A72C-4354-8FB4-03D5610BA253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9DEE4F-A72C-4354-8FB4-03D5610BA253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9DEE4F-A72C-4354-8FB4-03D5610BA253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9DEE4F-A72C-4354-8FB4-03D5610BA253}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
