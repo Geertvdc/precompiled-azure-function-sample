@@ -1,4 +1,4 @@
-﻿using PrecompiledFunctionSample;
+﻿using PreCompiledFunctionDemo;
 using System;
 using System.Collections.Generic;
 using System.Linq;

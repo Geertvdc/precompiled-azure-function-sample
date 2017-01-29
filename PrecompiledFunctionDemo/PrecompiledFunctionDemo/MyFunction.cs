@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Net;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
+using System.Net.Http;
 
 namespace PreCompiledFunctionDemo
 {
-    public class SampleFunction
+    public class MyFunction
     {
         public static async Task<HttpResponseMessage> Run(HttpRequestMessage req)
         {
@@ -18,17 +15,14 @@ namespace PreCompiledFunctionDemo
                 .Value;
 
             // Get request body
-            if (req.Content != null)
-            {
-                dynamic data = await req.Content.ReadAsAsync<object>();
-                // Set name to query string or body data
-                name = name ?? data?.name;
-            }
+            dynamic data = await req.Content.ReadAsAsync<object>();
+
+            // Set name to query string or body data
+            name = name ?? data?.name;
 
             return name == null
                 ? req.CreateResponse(HttpStatusCode.BadRequest, "Please pass a name on the query string or in the request body")
                 : req.CreateResponse(HttpStatusCode.OK, "Hello " + name);
         }
-       
     }
 }

@@ -8,12 +8,13 @@
     <ProjectGuid>{D6C3939F-DC65-44DA-AAA4-E59A6619E91C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PreCompiledFunctionSample.Tests</RootNamespace>
-    <AssemblyName>PreCompiledFunctionSample.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>PreCompiledFunctionDemo.Tests</RootNamespace>
+    <AssemblyName>PreCompiledFunctionDemo.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -81,7 +82,7 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PrecompiledFunctionSample\PreCompiledFunctionDemo.csproj">
+    <ProjectReference Include="..\PrecompiledFunctionDemo\PreCompiledFunctionDemo.csproj">
       <Project>{76d251c7-4bc4-4b57-a01a-2c47f4f29407}</Project>
       <Name>PreCompiledFunctionDemo</Name>
     </ProjectReference>
